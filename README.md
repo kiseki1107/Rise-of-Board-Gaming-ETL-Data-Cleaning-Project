@@ -131,14 +131,14 @@ boardgame_combined_df.to_excel("output.xlsx")
 ## Further Notes
 There are many analyses one can perform given the provided combined DataFrame. Also, more data can be collected from other sources, such as extracting the ratings of board game items sold on Amazon.com using web-scraping techniques. Listed below are some examples of possible board game analyses:
 1. Identifying the trend of when each board game was published to analyze the rising popularity and growth of the tabletop gaming genre.
-   - Via details_yearpublished column from BoardGameGeek
-   - Via launched (or deadline) column from Kickstarter
+   * Via details_yearpublished column from BoardGameGeek
+   * Via launched (or deadline) column from Kickstarter
 2. Identify what board game category is most popular.
-   - Ex: stats_family_strategygames_bayesaverage for 1-10 rating and stats_family_strategygames_pos for BGG ranking in the strategy game category
+   * Ex: stats_family_strategygames_bayesaverage for 1-10 rating and stats_family_strategygames_pos for BGG ranking in the strategy game category
 3. Identify what type of board game do most people prefer.
-   - Via the suggested number of players criteria: ex: polls_suggested_numplayers_3
-   - Via average time length of board game to play: details_playingtime
-   - Via board game difficulty level which BGG gives 1-5 rankings from easy to hard: stats_averageweight
+   * Via the suggested number of players criteria: ex: polls_suggested_numplayers_3
+   * Via average time length of board game to play: details_playingtime
+   * Via board game difficulty level which BGG gives 1-5 rankings from easy to hard: stats_averageweight
 4. Identify the popularity of new board games from Kickstarter projects.
-   - Via the number of backers and US dollars donated to each board game, ex: backers vs usd pledged
+   * Via the number of backers and US dollars donated to each board game, ex: backers vs usd pledged
 
