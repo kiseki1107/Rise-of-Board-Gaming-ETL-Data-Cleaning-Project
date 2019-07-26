@@ -81,6 +81,8 @@ bgg_data = pd.read_sql("SELECT * FROM BoardGames", conn)
 ## Data Cleaning
 [Click here for code reference.](https://github.com/kiseki1107/ETL/blob/master/ETL.ipynb)
 
+![BoardGameGeek Image](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgamegeek.png)
+
 Once BoardGameGeek's SQLite file gets converted into a python dataFrame, cleaning functions such as **df.iloc** and **df.drop*** were used to clean up the table. **df.info()** was used to collect all the names of the columns to assist in dropping the unnecessary columns.
 
 One thing to note was that the column names for the BoardGameGeek datasets had periods in the variable names, so every column had to be renamed by replacing “.” With “_” to make python coding much easier.
@@ -89,6 +91,8 @@ One thing to note was that the column names for the BoardGameGeek datasets had p
 # Convert the columns into python accessible variables by replacing . with _
 bgg_data.columns = bgg_data.columns.str.replace(".", "_")
 ```
+
+![KickStarter Image](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/kickstarter.png)
 
 In the Kickstarter CSV file dataset, the file was converted into a python dataFrame with the pandas library.
 
