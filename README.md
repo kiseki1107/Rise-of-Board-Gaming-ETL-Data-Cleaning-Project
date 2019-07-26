@@ -116,7 +116,16 @@ ks_good_boardgame = ks_boardgame[ks_boardgame.state == 'successful']
 
 Finally, both BoardGameGeek and Kickstarter DataFrames were combined via the **pd.merge()** function. In order to merge those two DataFrames, I had to make sure that the column names that describes each board game names were matching. So, the ‘name’ column from the Kickstarter DataFrame was changed to ‘details_name’ to match that of the BoardGameGeek column name. It is there that allows both DataFrames to be merged. Once completed, the combined DataFrame was loaded into an excel file called ‘output.xlsx’.
 
+```python
+# Change the column 'name' to match the column 'detail_name' from the BGG dataFrame.
+ks_database.rename(columns={'name': 'details_name'}, inplace=True)
 
+# Merge the KS and BGG dataFrames together.
+boardgame_combined_df = pd.merge(bgg_database, ks_database, on='details_name')
+
+# Export the combined dataFrame into an Excel file.
+boardgame_combined_df.to_excel("output.xlsx")
+```
 
 <a name="PresentationSlides"></a>
 ## Further Notes
