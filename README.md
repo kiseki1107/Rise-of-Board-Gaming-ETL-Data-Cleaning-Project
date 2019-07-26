@@ -3,9 +3,9 @@ A data manipulation and cleaning project that seeks to capture rising trend of b
 
 ## Table of Contents
 * [Introduction](#Introduction)
-* [Methods](#Methods)
-* [Technologies](#Technologies)
-* [Dependencies](#Dependencies)
+  * [Methods](#Methods)
+  * [Technologies](#Technologies)
+  * [Dependencies](#Dependencies)
 * [Data Collection](#DataCollection)
 * [Data Cleaning](#DataCleaning)
 * [Further Notes](#PresentationSlides)
