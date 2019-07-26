@@ -1,3 +1,5 @@
+[Board Game Image Cover](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgames.jpg)
+
 # The Rise of Board Gaming
 A data manipulation and cleaning project that seeks to capture rising trend of board game interests from multiple different sources of datasets.
 
@@ -114,7 +116,7 @@ ks_boardgame = ks_data[ks_data.category == 'Tabletop Games']
 ks_good_boardgame = ks_boardgame[ks_boardgame.state == 'successful']
 ```
 
-Finally, both BoardGameGeek and Kickstarter DataFrames were combined via the **pd.merge()** function. In order to merge those two DataFrames, I had to make sure that the column names that describes each board game names were matching. So, the ‘name’ column from the Kickstarter DataFrame was changed to ‘details_name’ to match that of the BoardGameGeek column name. It is there that allows both DataFrames to be merged. Once completed, the combined DataFrame was loaded into an excel file called ‘output.xlsx’.
+Finally, both BoardGameGeek and Kickstarter DataFrames were combined via the **pd.merge()** function. In order to merge those two DataFrames, I had to make sure that the column names that describes each board game names were matching. So, the ‘name’ column from the Kickstarter DataFrame was changed to ‘details_name’ to match that of the BoardGameGeek column name. It is there that allows both DataFrames to be merged. Once completed, the combined DataFrame was loaded into an excel file called ‘output.xlsx’. Download and view the cleaned data file [here](https://github.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/blob/master/output.xlsx).
 
 ```python
 # Change the column 'name' to match the column 'detail_name' from the BGG dataFrame.
