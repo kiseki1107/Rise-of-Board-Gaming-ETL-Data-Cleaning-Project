@@ -1,4 +1,4 @@
-[Board Game Image Cover](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgames.jpg)
+![Board Game Image Cover](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgames.jpg)
 
 # The Rise of Board Gaming
 A data manipulation and cleaning project that seeks to capture rising trend of board game interests from multiple different sources of datasets.
