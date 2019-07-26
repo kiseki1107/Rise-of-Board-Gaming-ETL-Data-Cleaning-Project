@@ -82,7 +82,7 @@ bgg_data = pd.read_sql("SELECT * FROM BoardGames", conn)
 [Click here for code reference.](https://github.com/kiseki1107/ETL/blob/master/ETL.ipynb)
 
 <p align="center">
-![BoardGameGeek Image](https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgamegeek.png)
+ <img width="500" height="300" src="https://raw.githubusercontent.com/kiseki1107/Rise-of-Board-Gaming-ETL-Data-Cleaning-Project/master/Images/boardgamegeek.png">
  </p>
 
 Once BoardGameGeek's SQLite file gets converted into a python dataFrame, cleaning functions such as **df.iloc** and **df.drop*** were used to clean up the table. **df.info()** was used to collect all the names of the columns to assist in dropping the unnecessary columns.
